@@ -485,7 +485,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(/img/bg3.jpg);
+  background-image: url(https://eiji1024-web.github.io/middleEX/img/bg3.jpg);
 }
 
 .header-clone .header-in .drawer-menu .menu-wrapper .menu-item {
