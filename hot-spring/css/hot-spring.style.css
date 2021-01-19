@@ -250,7 +250,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(/img/bg3.jpg);
+  background-image: url(https://github.com/eiji1024-web.middleEX/img/bg3.jpg);
 }
 
 .header-in .drawer-menu .menu-wrapper .menu-item {
@@ -455,7 +455,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(/img/bg3.jpg);
+  background-image: url(https://github.com/eiji1024-web.middleEX/img/bg3.jpg);
 }
 
 .header-clone .header-in .drawer-menu .menu-wrapper .menu-item {
@@ -574,7 +574,7 @@ img {
 .mv-in {
   max-width: 1920px;
   height: 100%;
-  background-image: url(/img/onsen-header.jpg);
+  background-image: url(https://github.com/eiji1024-web.middleEX/img/onsen-header.jpg);
   background-size: cover;
   background-position: center;
   margin: 0 auto;
@@ -668,7 +668,7 @@ img {
   height: 381px;
   padding-left: 12.4vw;
   padding-top: 60px;
-  background-image: url(/img/bg.jpg);
+  background-image: url(https://github.com/eiji1024-web.middleEX/img/bg.jpg);
   margin-left: -8.23vw;
   margin-top: 57px;
 }
@@ -715,7 +715,7 @@ img {
   height: 381px;
   padding-left: 3.13vw;
   padding-top: 60px;
-  background-image: url(/img/bg.jpg);
+  background-image: url(https://github.com/eiji1024-web.middleEX/img/bg.jpg);
   margin-top: 57px;
 }
 
@@ -773,7 +773,7 @@ footer {
 footer .footer-in {
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url(/img/bg3.jpg);
+  background-image: url(https://github.com/eiji1024-web.middleEX/img/bg3.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 64px;
