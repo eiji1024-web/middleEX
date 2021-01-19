@@ -280,7 +280,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(/img/bg3.jpg);
+  background-image: url(https://eiji1024-web.github.io/middleEX/img/bg3.jpg);
 }
 
 .header-in .drawer-menu .menu-wrapper .menu-item {
@@ -697,7 +697,7 @@ img {
 .theme-in {
   max-width: 1920px;
   height: 100%;
-  background-image: url(/img/bg.jpg);
+  background-image: url(https://eiji1024-web.github.io/middleEX/img/bg.jpg);
   background-size: cover;
   background-position: center;
   padding-left: 18.39vw;
@@ -988,7 +988,7 @@ img {
   max-width: 1920px;
   height: 100%;
   margin: 0 auto;
-  background-image: url(/img/bg02.jpg);
+  background-image: url(https://eiji1024-web.github.io/middleEX/img/bg02.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1316,7 +1316,7 @@ img {
 .access-in {
   max-width: 1920px;
   height: 100%;
-  background-image: url(/img/bg.jpg);
+  background-image: url(https://eiji1024-web.github.io/middleEX/img/bg.jpg);
   background-size: cover;
   background-position: center;
   margin: 0 auto;
@@ -1414,7 +1414,7 @@ footer {
 footer .footer-in {
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url(/img/bg3.jpg);
+  background-image: url(https://eiji1024-web.github.io/middleEX/img/bg3.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 64px;
