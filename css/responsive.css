@@ -259,7 +259,7 @@
 
 @media (max-width: 768px) {
   .intro-in .room-img {
-    width: 65vw;
+    width: 90vw;
     height: 80%;
     min-height: 300px;
   }
@@ -267,7 +267,6 @@
 
 @media (max-width: 375px) {
   .intro-in .room-img {
-    width: 90vw;
     min-height: 200px;
   }
 }
@@ -383,7 +382,7 @@
 
 @media (max-width: 768px) {
   .intro-in .food-img {
-    width: 65vw;
+    width: 90vw;
     height: 80%;
     min-height: 300px;
     -webkit-box-ordinal-group: 1;
@@ -394,7 +393,6 @@
 
 @media (max-width: 375px) {
   .intro-in .food-img {
-    width: 90vw;
     min-height: 200px;
   }
 }
@@ -518,7 +516,7 @@
 
 @media (max-width: 768px) {
   .intro-in .hot-spring-img {
-    width: 65vw;
+    width: 90vw;
     height: 80%;
     min-height: 300px;
   }
@@ -526,7 +524,6 @@
 
 @media (max-width: 375px) {
   .intro-in .hot-spring-img {
-    width: 90vw;
     min-height: 200px;
   }
 }
