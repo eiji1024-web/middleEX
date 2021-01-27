@@ -1,0 +1,727 @@
+$sp: 375px;
+$tb: 768px;
+$lptp: 1024px;
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+    @content;
+    }
+}
+
+@mixin tb {
+    @media (max-width: ($tb)) {
+        @content;
+    }
+}
+
+@mixin lptp {
+    @media (max-width: ($lptp)) {
+        @content;
+    }
+}
+
+.header {
+    @include sp {
+        height: 50px;
+    }
+    &-in {
+        .header-nav {
+            @include tb {
+                display: none;
+            }
+        }
+        .header-logo {
+            img {
+                @include sp {
+                    width: 160px;
+                    height: 30px;
+                }
+            }
+        }
+        .btnHamburger {
+            @include tb {
+                display: block;
+            }
+            @include sp {
+                top: 0%;
+            }
+        }
+        .reservation-btn {
+            @include tb {
+                display: none;
+            }
+        }
+    }
+}
+.header-clone {
+    @include sp {
+        height: 50px;
+    }
+    .header-in {
+        .header-nav {
+            @include tb {
+                display: none;
+            }
+        }
+        .header-logo {
+            img {
+                @include sp {
+                    width: 160px;
+                    height: 30px;
+                }
+            }
+        }
+        .btnHamburger {
+            @include tb {
+                display: block;
+            }
+            @include sp {
+                top: 0%;
+            }
+        }
+        .reservation-btn {
+            @include tb {
+                display: none;
+            }
+        }
+        .drawer-menu {
+            .menu-wrapper {
+                @include sp {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+.modal {
+    &-in {
+        @include sp {
+            width: 100%;
+            height: auto;
+            padding: 0 10px;
+        }
+        .modal-ttl {
+            @include sp {
+                padding: 10px 0;
+                margin-bottom: 10px;
+            }
+        }
+        label {
+            @include sp {
+                font-size: 1.3rem;
+            }
+        }
+        input {
+            @include sp {
+                margin: 10px 0;
+            }
+        }
+        .send {
+            @include sp {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+.mv {
+    @include sp {
+        height: 500px;
+    }
+    &-in {
+        @include sp {
+            padding-top: 25vh;
+        }
+        .heading {
+            .ttl01 {
+                @include tb {
+                    font-size: 3rem;
+                }
+                @include sp {
+                    font-size: 2.6rem;
+                }
+            }
+            .ttl02 {
+                @include tb {
+                    font-size: 3rem;
+                    padding-top: 5vh;
+                    padding-right: 7vw;
+                }
+                @include sp {
+                    font-size: 2.6rem;
+                }
+            }
+        }
+    }
+}
+.theme {
+    @include sp {
+        height: auto;
+    }
+    &-in {
+        @include tb {
+            padding: 0;
+        }
+        .theme-container {
+            @include tb {
+                margin: 0 auto;
+                padding: 0;
+            }
+            @include sp {
+                writing-mode: horizontal-tb;
+                margin-top: 0;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                width: 90%;
+            }
+            .heading {
+                .ttl01 {
+                    @include sp {
+                        margin-top: 0;
+                        font-size: 2.4rem;
+                    }
+                }
+                .ttl02 {
+                    @include sp {
+                        margin-top: 5px;
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+            .theme-txt-wrap {
+                @include sp {
+                    margin-top: 40px;
+                }
+                .theme-txt {
+                    @include sp {
+                        margin-top: 0;
+                        line-height: 20px;
+                        font-size: 1.5rem;
+                    }
+                }
+                .theme-txt-copy {
+                    @include sp {
+                        margin-top: 0;
+                        font-size: 1.5rem;
+                        line-height: 20px;
+                    }
+                }
+            }
+            .theme-txt-name {
+                @include sp {
+                    margin-top: 40px;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+.intro {
+    @include tb {
+        height: auto;
+        max-height: none;
+    }
+    &-in {
+        @include lptp {
+            height: auto;
+            padding-bottom: 0;
+            padding-top: 50px;
+        }
+        .room {
+            @include lptp {
+                margin-bottom: 60px;
+            }
+            @include tb {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 40px;
+            }
+            &-img {
+                @include tb {
+                    width: 90vw;
+                    height: 80%;
+                    min-height: 300px;
+                }
+                @include sp {
+                    min-height: 200px;
+                }
+                img {
+                    @include tb {
+                        width: 100%;
+                        height: 80%;
+                        min-height: 300px;
+                    }
+                    @include sp {
+                        min-height: 200px;
+                    }
+                }
+            }
+            .txt-wrapper {
+                @include tb {
+                    padding-left: 10vw;
+                    padding-right: 10vw;
+                }
+                .heading {
+                    @include lptp {
+                        font-size: 2.6rem;
+                        line-height: 50px;
+                    }
+                    @include tb {
+                        text-align: center;
+                    }
+                    @include sp {
+                        font-size: 2.4rem;
+                    }
+                    br {
+                        @include tb {
+                            display: none;
+                        }
+                        @include sp {
+                            display: block;
+                        }
+                    }
+                }
+                .room-txt {
+                    @include lptp {
+                        font-size: 1.5rem;
+                        margin-top: 45px;
+                        margin-bottom: 45px;
+                    }
+                    @include tb {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    br {
+                        @include tb {
+                            display: none;
+                        }
+                    }
+                }
+                .room-btn {
+                    @include tb {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .room-link {
+                        @include lptp {
+                            width: 160px;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+        .food {
+            @include lptp {
+                margin-bottom: 60px;
+            }
+            @include tb {
+                flex-direction: column;
+                align-items: center;                
+            }
+            &-img {
+                @include tb {
+                    width: 90vw;
+                    height: 80%;
+                    min-height: 300px;
+                    order: 0;
+                }
+                @include sp {
+                    min-height: 200px;
+                }
+                img {
+                    @include tb {
+                        width: 100%;
+                        height: 80%;
+                        min-height: 300px;
+                    }
+                    @include sp {
+                        min-height: 200px;
+                    }
+                }
+            }
+            .txt-wrapper {
+                @include lptp {
+                    padding-top: 0;
+                }
+                @include tb {
+                    padding-left: 10vw;
+                    padding-right: 10vw;
+                    padding-top: 32px;
+                }
+                .heading {
+                    @include lptp {
+                        font-size: 2.6rem;
+                        line-height: 50px;
+                    }
+                    @include tb {
+                        text-align: center;
+                    }
+                    @include sp {
+                        font-size: 2.4rem;
+                    }
+                    br {
+                        @include tb {
+                            display: none;
+                        }
+                        @include sp {
+                            display: block;
+                        }
+                    }
+                }
+                .food-txt {
+                    @include lptp {
+                        font-size: 1.5rem;
+                        margin-top: 45px;
+                        margin-bottom: 45px;
+                    }
+                    @include tb {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    br {
+                        @include tb {
+                            display: none;
+                        }
+                    }
+                }
+                .food-btn {
+                    @include tb {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .food-link {
+                        @include lptp {
+                            width: 160px;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+        .hot-spring {
+            @include lptp {
+                margin-bottom: 60px;
+            }
+            @include tb {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 40px;
+            }
+            &-img {
+                @include tb {
+                    width: 90vw;
+                    height: 80%;
+                    min-height: 300px;
+                }
+                @include sp {
+                    min-height: 200px;
+                }
+                img {
+                    @include tb {
+                        width: 100%;
+                        height: 80%;
+                        min-height: 300px;
+                    }
+                    @include sp {
+                        min-height: 200px;
+                    }
+                }
+            }
+            .txt-wrapper {
+                @include lptp {
+                    padding-top: 0;
+                }
+                @include tb {
+                    padding-left: 7vw;
+                    padding-right: 7vw;
+                    padding-top: 32px;
+                }
+                .heading {
+                    @include lptp {
+                        font-size: 2.6rem;
+                        line-height: 50px;
+                    }
+                    @include tb {
+                        text-align: center;
+                    }
+                    @include sp {
+                        font-size: 2.4rem;
+                    }
+                    br {
+                        @include tb {
+                            display: none;
+                        }
+                    }
+                }
+                .hot-spring-txt {
+                    @include lptp {
+                        font-size: 1.5rem;
+                        margin-top: 35px;
+                        margin-bottom: 35px;
+                    }
+                    @include tb {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    br {
+                        @include tb {
+                            display: none;
+                        }
+                    }
+                }
+                .hot-spring-btn {
+                    @include tb {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .hot-spring-link {
+                        @include lptp {
+                            width: 160px;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.plan {
+    @include lptp {
+        height: auto;
+    }
+    &-in {
+        .plan-container {
+            @include sp {
+                padding-top: 40px;
+            }
+            .heading {
+                @include tb {
+                    font-size: 2.8rem;
+                }
+                @include sp {
+                    font-size: 2.4rem;
+                    margin-top: 20px;
+                }
+            }
+            .plan-wrapper {
+                @include lptp {
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    padding-bottom: 30px;
+                }
+                @include tb {
+                    margin-top: 30px;
+                }
+                .plan01,.plan02,.plan03 {
+                    @include lptp {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
+                    @include sp {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .plan-ttl {
+                        @include sp {
+                            margin-top: 20px;
+                        } 
+                    }
+                    .plan-txt {
+                        @include sp {
+                            margin-top: 20px;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+.news {
+    &-in {
+        @include sp {
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        .heading {
+            @include tb {
+                font-size: 2.8rem;
+            }
+            @include sp {
+                font-size: 2.4rem;
+            }
+        }
+        .news-nav {
+            @include sp {
+                margin-top: 26px;
+            }
+        }
+        .tab-contents01,.tab-contents02 {
+            @include lptp {
+                justify-content: space-around;
+            }
+            @include sp {
+                margin-top: 30px;
+            }
+            .news-item {
+                @include lptp {
+                    width: 45vw;
+                }
+                @include tb {
+                    min-width: 300px;
+                }
+                .busi-day-wrapper {
+                    @include tb {
+                        width: 80%;
+                        margin-top: 20px;
+                    }
+                    @include sp {
+                        margin-left: 5vw;
+                    }
+                    .day-txt {
+                        @include lptp {
+                            max-width: 30vw;
+                        }
+                        @include tb {
+                            max-width: 100%;
+                        }
+                        br {
+                            @include sp {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.access {
+    @include tb {
+        height: auto;
+    }
+    &-in {
+        .access-container {
+            @include tb {
+                padding-bottom: 60px;
+            }
+            @include sp {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            .heading {
+                @include tb {
+                    font-size: 2.8rem;
+                }
+                @include sp {
+                    font-size: 2.4rem;
+                }
+            }
+            .access-wrapper {
+                @include tb {
+                    margin-top: 30px;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .access-img {
+                    @include tb {
+                        max-width: 80%;
+                        height: auto;
+                    }
+                }
+                .access-txts {
+                    @include tb {
+                        margin-left: 0;
+                        width: 80%;
+                    }
+                    .access-ttl {
+                        @include lptp {
+                            margin-top: 20px;
+                        }
+                    }
+                    .street-add {
+                        br {
+                            @include tb {
+                                display: none;
+                            }
+                        }
+                    }
+                    .access-txt {
+                        @include lptp {
+                            margin-top: 20px;
+                        }
+                    }
+                    .over-txt {
+                        @include lptp {
+                            line-height: 24px;
+                        }
+                        br {
+                            @include tb {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .gmap {
+                @include lptp {
+                    width: 80%;
+                    margin-top: 69px;
+                    height: 0;
+                    overflow: hidden;
+                    padding-bottom: 75%;
+                    position: relative;
+                }
+                @include tb {
+                    margin-top: 40px;
+                }
+                .gmap iframe {
+                    @include lptp {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+footer {
+    .footer-in {
+        @include tb {
+            padding-top: 50px;
+        }
+        .footer-nav {
+            .nav-list {
+                @include sp {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .food {
+                    @include sp {
+                        margin-left: 5vw;
+                        margin-right: 5vw;
+                    }
+                }
+            }
+        }
+        .footer-logo {
+            @include tb {
+                margin-top: 40px;
+            }
+        }
+        .add-container {
+            @include tb {
+                margin-top: 30px;
+            }
+        }
+        .copy-right {
+            @include tb {
+                margin-top: 30px;
+            }
+        }
+    }
+}
